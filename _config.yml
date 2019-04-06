@@ -71,7 +71,7 @@ theme: melody
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/chris3687994/chris3687994.github.io
+  repository: https://hexo-token@github.com/chris3687994/chris3687994.github.io
   branch: master
 
 # Markdown-it config
