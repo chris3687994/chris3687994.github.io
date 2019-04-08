@@ -24,7 +24,7 @@ menu:
 
 # Favicon
 # ---------------
-favicon: /cat-favicon.ico
+favicon: /images/cat-favicon.ico
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
@@ -128,7 +128,7 @@ cdn:
 
 # Post info settings
 # ---------------
-avatar: http://wx1.sinaimg.cn/large/006fVPCvly1g1sanhfq9zj30my0myaey.jpg
+avatar: https://wx1.sinaimg.cn/large/006fVPCvly1g1sanhfq9zj30my0myaey.jpg
 
 top_img: false # false or url of img
 
