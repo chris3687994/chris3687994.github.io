@@ -128,7 +128,7 @@ cdn:
 
 # Post info settings
 # ---------------
-avatar: https://wx1.sinaimg.cn/large/006fVPCvly1g1sanhfq9zj30my0myaey.jpg
+avatar: /images/pic.png
 
 top_img: false # false or url of img
 
@@ -147,13 +147,13 @@ toc:
 
 post_copyright:
   enable: true
-  license: 知识共享(Creative Commons) 署名-非商业性使用-相同方式共享 3.0 中国大陆许可协议
-  license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/cn/
+  license: 知识共享(Creative Commons) 署名-非商业性使用-相同方式共享 4.0 国际许可协议
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 # Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/#/theme-config?id=auto-excerpt
 auto_excerpt:
    enable: true
-   length: 300
+   length: 200
 
 # slide
 # For reveal.js config, see https://github.com/hakimel/reveal.js#configuration

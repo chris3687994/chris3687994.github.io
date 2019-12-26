@@ -4,7 +4,7 @@
 
 # Site
 title: Flag.life - Flag小组成员的日常
-subtitle: 
+subtitle: 人生就像GAL一样充满了选择，只是选错后无法回档
 description: 这里是 @丹羽真 的个人博客，Flag小组成员，什么都会写，主要是日常，欢迎订阅。
 keywords: 
 author: 丹羽真
@@ -96,7 +96,7 @@ markdown:
     collisionSuffix: 'v'
     permalink: false
     permalinkClass: header-anchor
-    permalinkSymbol: ¶
+    permalinkSymbol: 
 
 search:
   path: search.xml
