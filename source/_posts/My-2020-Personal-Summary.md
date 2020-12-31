@@ -1,7 +1,7 @@
 title: 我的2020年个人总结
-date: 2020-12-30
+date: 2020-12-31
 tags: 
-   - 日常
+- 日常
 
 categories: 日常
 
