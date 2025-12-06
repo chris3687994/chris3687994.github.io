@@ -1,0 +1,138 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="为Hexo博客melody主题添加Giscus评论系统"><meta name="keywords" content="技术,Hexo,melody,主题修改,Giscus"><meta name="author" content="丹羽真"><meta name="copyright" content="丹羽真"><title>为Hexo博客melody主题添加Giscus评论系统 | Flag.life - 丹羽真のBLOG</title><link rel="shortcut icon" href="/images/favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.9.1"><link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.9.1"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="dns-prefetch" href="https://www.google-analytics.com"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-137788896-1', 'auto');
+ga('send', 'pageview');</script><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  hexoVersion: '6.3.0'
+} </script><meta name="generator" content="Hexo 6.3.0"></head><body><canvas class="fireworks"></canvas><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B7%E4%BD%93%E6%80%9D%E8%B7%AF"><span class="toc-number">2.</span> <span class="toc-text">具体思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%96%B0%E7%9A%84Giscus%E4%BB%93%E5%BA%93"><span class="toc-number">3.</span> <span class="toc-text">创建新的Giscus仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E6%88%90Giscus%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF"><span class="toc-number">4.</span> <span class="toc-text">生成Giscus配置信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%86Giscus%E6%B7%BB%E5%8A%A0%E5%88%B0%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E4%B8%AD"><span class="toc-number">5.</span> <span class="toc-text">将Giscus添加到博客主题中</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BA%94%E7%94%A8%E4%B8%BB%E9%A2%98%E5%B9%B6%E6%9F%A5%E7%9C%8BGiscus%E6%95%88%E6%9E%9C"><span class="toc-number">6.</span> <span class="toc-text">应用主题并查看Giscus效果</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="/images/pic.png"></div><div class="author-info__name text-center">丹羽真</div><div class="author-info__description text-center">这里是 @丹羽真 的个人博客，Flag小组成员，什么都会写，主要是日常，欢迎订阅。</div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">5</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">7</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">3</span></a></div></div></div><div id="content-outer"><div class="plain" id="top-container"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">Flag.life - 丹羽真のBLOG</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">首页</a><a class="site-page" href="/archives">归档</a><a class="site-page" href="/tags">标签</a><a class="site-page" href="/categories">分类</a><a class="site-page" href="/about">关于我</a><a class="site-page" href="/point">幸福点数</a><a class="site-page" href="/love">爱情树</a></span><span class="pull-right"><a class="site-page social-icon search"><i class="fa fa-search"></i><span> 搜索</span></a></span></div></div><div class="layout" id="content-inner"><article id="post"><div class="plain" id="post-title">为Hexo博客melody主题添加Giscus评论系统</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2025-12-06</time><span class="post-meta__separator">|</span><i class="fa fa-inbox" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/"> 技术</a><span class="post-meta__separator">|</span><span class="post-meta-wordcount"><span>字数总计: </span><span class="word-count">2.2k</span><span class="post-meta__separator">|</span><span>阅读时长: 7 分钟</span></span></div><div class="article-container" id="post-content"><h2 id="前言">前言</h2>
+<p>  <a target="_blank" rel="noopener" href="https://giscus.app/zh-CN">Giscus</a>是一个基于利用 GitHub Discussions 实现的评论系统，让访客可以借助 GitHub 在你的网站上留下评论和反应。这个评论系统具有开源、免费、无跟踪、无广告、可自定义主题、支持Markdown语法，并且可以在发表前进行预览等特点，是一个非常好用的评论系统。<br>
+  我的博客原来使用的是主题提供的Disqus评论系统，但在实际使用过程中存在着以下不便：</p>
+<ol>
+<li>这个系统对国内的用户是无法访问的，因此想要评论就得使用一些手段（虽然没人看我的博客，更别提评论了🙃）。</li>
+<li>即使能访问了，你想评论还得注册一个Disqus的账号，麻烦。</li>
+</ol>
+<p>  总之，Giscus能完美的解决以上的痛点，因此我决定为我的博客加上Giscus评论系统。但是博客使用的Melody主题的最新版本没有集成Giscus评论系统，并且最后更新时间停留在了2022年，因此在不更换博客主题的基础上需要自己动手。本篇文章就是在这个想法的基础上对主题进行适当的修改，同时为以后的自定义修改主题打下基础。如果你使用的是其他不支持Giscus评论的主题，可以参考本文章思路，对你的主题进行修改，希望对你有用！<span id="more"></span></p>
+<h2 id="具体思路">具体思路</h2>
+<ol>
+<li>
+<p>创建新的Giscus仓库</p>
+</li>
+<li>
+<p>生成Giscus配置信息</p>
+</li>
+<li>
+<p>将Giscus添加到博客主题中</p>
+</li>
+<li>
+<p>应用主题并查看Giscus效果</p>
+</li>
+</ol>
+<h2 id="创建新的Giscus仓库">创建新的Giscus仓库</h2>
+<ol>
+<li>访问<a target="_blank" rel="noopener" href="https://giscus.app/zh-CN">Giscus</a>的官网，根据指引，创建一个公开仓库（Repository），名称随意，我的这个仓库名称是giscus。然后保持默认选项，点击创建仓库（Creat repository）。<br>
+<img src="https://s2.loli.net/2025/12/06/hyX9o7Qf5ZFsJTL.png" alt="创建Giscus仓库"></li>
+</ol>
+<blockquote>
+<p>注意：仓库的属性必须是Public，这里我已经创建好了仓库，所以提示名称已存在。</p>
+</blockquote>
+<ol start="2">
+<li>然后安装<a target="_blank" rel="noopener" href="https://github.com/apps/giscus">Giscus APP</a> 至你的仓库中,点击右边的Configure按钮，进入安装页面，然后在<code>Only select repositories</code>选项中，选择你刚才创建的giscus仓库，然后点击保存。</li>
+</ol>
+<p><img src="https://s2.loli.net/2025/12/06/gxwPl3QqNTyILiM.png" alt="安装Giscus APP"></p>
+<ol start="3">
+<li>
+<p>让Discussions 功能已在你的仓库中启用。在仓库的设置（Settings）页面里将<code>Discussions</code>选项打上勾。</p>
+</li>
+<li>
+<p>在你的giscus仓库内新建一个<code>.giscus.yml</code>的文件，在文件内添加如下内容后点击保存：</p>
+</li>
+</ol>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># .giscus.yml 文件</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># The origins authorized to load giscus must be listed here.</span></span><br><span class="line"><span class="attr">origins:</span></span><br><span class="line">  <span class="comment"># 添加您的生产域名，例如：</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">https://yourdomain.com</span>  <span class="string">\\你自己博客的域名</span> </span><br><span class="line">  <span class="bullet">-</span> <span class="string">http://localhost:4000</span>     <span class="string">\\你本地调试的地址</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">http://0.0.0.0:4000</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Optionally, you can use originsRegex instead of origins to use regular expressions.</span></span><br><span class="line"><span class="comment"># originsRegex:</span></span><br><span class="line"><span class="comment">#   - https://.*\.your-production-domain\.com</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>  这个文件的作用是方便你在本地进行调试预览Giscus评论的效果。添加完成后，进行下一步，生成Giscus配置信息。</p>
+<h2 id="生成Giscus配置信息">生成Giscus配置信息</h2>
+<p>  在<a target="_blank" rel="noopener" href="https://giscus.app/zh-CN">Giscus</a>的配置页面里分别填入仓库连接，待检查没有问题后在进行页面映射的关系、discussion分类、特性、主题等配置：</p>
+<p><img src="https://s2.loli.net/2025/12/06/wlyMU8pN2dftRbj.png" alt="按照指引配置Giscus"><br>
+  然后会生成以下JS内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;https://giscus.app/client.js&quot;</span><br><span class="line">        data-repo=&quot;[在此输入仓库]&quot;</span><br><span class="line">        data-repo-id=&quot;[在此输入仓库 ID]&quot;</span><br><span class="line">        data-category=&quot;[在此输入分类名]&quot;</span><br><span class="line">        data-category-id=&quot;[在此输入分类 ID]&quot;</span><br><span class="line">        data-mapping=&quot;url&quot;</span><br><span class="line">        data-strict=&quot;0&quot;</span><br><span class="line">        data-reactions-enabled=&quot;1&quot;</span><br><span class="line">        data-emit-metadata=&quot;0&quot;</span><br><span class="line">        data-input-position=&quot;bottom&quot;</span><br><span class="line">        data-theme=&quot;preferred_color_scheme&quot;</span><br><span class="line">        data-lang=&quot;zh-CN&quot;</span><br><span class="line">        crossorigin=&quot;anonymous&quot;</span><br><span class="line">        async&gt;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>  至此，Giscus的相关配置工作完成。</p>
+<h2 id="将Giscus添加到博客主题中">将Giscus添加到博客主题中</h2>
+<p>  基于前言中说到的情况，Hexo的<a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/hexo-theme-melody">Melody</a>主题是通过npm发布并安装的，除非作者更新主题，否则要将Giscus集成到Hexo主题中有以下两个方案：</p>
+<ul>
+<li>方案一：自己创建一个主题仓库，在现在的主题进行上传，并在此基础上进行修改。</li>
+<li>方案二：在Hexo网站根目录下创建Script文件夹，根据Hexo的文档说明将Giscus的配置文件作为一个JS文件进行处理。</li>
+</ul>
+<p>  这里我考虑了以下，为了方便以后进行其他方面的修改，决定使用方案一。其具体步骤操作如下：</p>
+<ol>
+<li>创建一个新的公开仓库，名称自定义，我命名为了<code>hexo-theme-melody</code>。</li>
+<li>复制现在使用的主题文件，Melody主题保存在Hexo目录下<code>node_modules</code>文件夹中，找到<code>hexo-theme-melody</code>文件夹，复制一份放到其他位置。</li>
+<li>进入复制的<code>hexo-theme-melody</code>文件夹中，删除<code>.git</code>文件夹（没有的可以跳过这个步骤）。</li>
+<li>打开<code>git</code>软件，进入到主题文件夹<code>hexo-theme-melody</code>中，使用如下命令：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git init  \\初始化仓库</span><br><span class="line">git branch -M master  \\将仓库主分支命名为master</span><br><span class="line">git remote add origin git@github.com:yourname/your-repository.git  \\将远程仓库与本地文件夹关联起来</span><br><span class="line">git commit -m &quot;Initial commit of custom melody theme&quot; \\提交commit信息</span><br><span class="line">git push - u origin master \\将本地文件推送至远程仓库</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>注意：</p>
+<ol>
+<li>这里我使用的GitHub的SSH链接，也可以使用HTTPS连接。</li>
+<li>git push的操作可以在修改完成后再进行操作。</li>
+</ol>
+</blockquote>
+<ol start="5">
+<li>找到主题目录中的<code>layout\includes\comments</code>文件夹，新建一个<code>giscus.pug</code>的文件，文件内容就是前面提到的Giscus配置js里的内容，将具体的内容变成可以修改数值的项：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">if theme.giscus &amp;&amp; theme.giscus.enable</span><br><span class="line"></span><br><span class="line">    script(</span><br><span class="line">      src=&quot;https://giscus.app/client.js&quot;</span><br><span class="line">      data-repo=theme.giscus.repo</span><br><span class="line">      data-repo-id=theme.giscus.repo_id</span><br><span class="line">      data-category=theme.giscus.category</span><br><span class="line">      data-category-id=theme.giscus.category_id</span><br><span class="line">      data-mapping=theme.giscus.mapping</span><br><span class="line">      data-strict=theme.giscus.strict</span><br><span class="line">      data-reactions-enabled=theme.giscus.reactions_enabled</span><br><span class="line">      data-emit-metadata=theme.giscus.emit_metadata</span><br><span class="line">      data-input-position=theme.giscus.input_position</span><br><span class="line">      data-theme=theme.giscus.theme</span><br><span class="line">      data-lang=theme.giscus.lang</span><br><span class="line">      data-loading=theme.giscus.loading</span><br><span class="line">      crossorigin=&quot;anonymous&quot;</span><br><span class="line">      async</span><br><span class="line">    )</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+<ol start="6">
+<li>打开<code>layout\includes\comments</code>文件夹中的<code>index.pug</code>，在文件中末尾添加一行代码：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">else if theme.giscus &amp;&amp; theme.giscus.enable</span><br><span class="line">  include ./giscus.pug</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>如果是第一个判断条件，就用if，在后面就用else if，我这里直接在源文件后面加的。</p>
+</blockquote>
+<ol start="7">
+<li>找到并打开你主题文件夹下的<code>config.yml</code>文件，在文件中添加以下内容：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">#giscus comment system. https://giscus.app</span><br><span class="line">#根据页面上给出的参数逐一填写</span><br><span class="line">giscus:</span><br><span class="line">  enable: false     # 设置true开启</span><br><span class="line">  repo: &quot;&quot;          # 使用giscus的仓库名称</span><br><span class="line">  repo_id: &quot;&quot;       # 您的 Repo ID</span><br><span class="line">  category: &quot;&quot;      # 您的讨论分类名称</span><br><span class="line">  category_id: &quot;&quot;   # 您的 Category ID</span><br><span class="line">  mapping: &quot;&quot;       # giscus评论映射路径</span><br><span class="line">  strict: &quot;&quot;</span><br><span class="line">  reactions_enabled: &quot;&quot;</span><br><span class="line">  emit_metadata: &quot;&quot;</span><br><span class="line">  input_position: &quot;&quot;</span><br><span class="line">  theme: &quot;&quot;          #giscus主题</span><br><span class="line">  lang: &quot;&quot;</span><br><span class="line">  loading: &quot;&quot;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>注意：配置文件里的项可以灵活修改，如果你觉得填的太多，只想填个别的项，其他写死，那么你可以只留下如<code>repo</code>、<code>repo_id</code>、<code>category</code>等你觉得必需要填的项，其他不需要填的项可以删除（如<code>theme</code>）。但是相应的，你在<code>giscus.pug</code>里相应项的数值就要写死（如`data-theme=“preferred_color_scheme”） 。</p>
+</blockquote>
+<ol start="8">
+<li>将修改后的主题<code>git push</code>到你的远程仓库中。</li>
+</ol>
+<p>   至此，主题的修改工作已完成，现在进行主题的应用。</p>
+<h2 id="应用主题并查看Giscus效果">应用主题并查看Giscus效果</h2>
+<p>  如果你是第一次安装这个主题，请参照主题的原文档进行安装，当然，这是官方的主题，没有Giscus，假如你要使用你自己修改后的主题，请进行如下操作：</p>
+<ol>
+<li>安装官方版本主题（如果你已经安装了该主题，可以跳过此步骤）</li>
+<li>找到Hexo目录下的<code>package.json</code>文件并进行修改如下内容：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&quot;hexo-theme-melody&quot;: &quot;git+https://github.com/your-username/your-repository.git#master&quot;  \\指定你主题的安装链接。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>删除<code>node_modules</code>文件夹和<code>package-lock.json</code>文件并重新加载依赖。</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">rm -rf node_modules/</span><br><span class="line">rm package-lock.json</span><br><span class="line">npm install</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>将主题文件夹<code>hexo-theme-melody</code>内的<code>config.yml</code>复制到你的Hexo的根目录下，重命名为<code>_config.melody.yml</code>并修改配置。（如果你已经安装过博客，有这个文件，那么就把<code>config.yml</code>里关于Giscus的那些项复制到已存在的<code>_config.melody.yml</code>就行，填写好对应的数值，不用重新配置整个文件。</li>
+<li>使用以下命令本地测试Giscus加载是否成功。</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean  \\清除缓存</span><br><span class="line">hexo g</span><br><span class="line">hexo s -p 4000   \\启动hexo本地服务，端口4000</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>重要：端口一定要和前面的<code>.giscus.yml</code>文件里的<code>localhost</code>的端口对应上，否则Giscus是不会加载出来的。</p>
+</blockquote>
+<p>  最后我们在本地看一下效果，输入<code>localhost:4000</code>进入你的一篇文章，加载成功！🎉🎉🎉</p>
+<p><img src="https://s2.loli.net/2025/12/06/GoY4dTOJnkEutQN.png" alt="查看测试效果"></p>
+<p>  测试没有问题后，你就可以部署博客到正式环境中，开始享受美妙的评论交互之旅了！</p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">丹羽真</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://flag.life/Add-Giscus-Comments-To-Hexo-Blog-Melody-Theme/">https://flag.life/Add-Giscus-Comments-To-Hexo-Blog-Melody-Theme/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享(Creative Commons) 署名-非商业性使用-相同方式共享 4.0 国际许可协议</a> 许可协议。转载请注明来自 <a href="https://flag.life">Flag.life - 丹羽真のBLOG</a>！</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%8A%80%E6%9C%AF/">技术</a><a class="post-meta__tags" href="/tags/Hexo/">Hexo</a><a class="post-meta__tags" href="/tags/melody/">melody</a><a class="post-meta__tags" href="/tags/%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9/">主题修改</a><a class="post-meta__tags" href="/tags/Giscus/">Giscus</a></div><nav id="pagination"><div class="next-post pull-right"><a href="/Migrate-And-Update-Hexo-Blog-From-Travis-Cl-to-Github-Actions/"><span>从Travis CL迁移并升级Hexo博客部署至Github Actions</span><i class="fa fa-chevron-right"></i></a></div></nav><script src="https://giscus.app/client.js" data-repo="chris3687994/giscus" data-repo-id="R_kgDOQgEcTA" data-category="Announcements" data-category-id="DIC_kwDOQgEcTM4CzOw5" data-mapping="url" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async></script></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2019 - 2025 By 丹羽真</div><div class="framework-info"><span>驱动 - </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 - </span><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://gcore.jsdelivr.net/npm/animejs@latest/lib/anime.min.js"></script><script src="https://gcore.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://gcore.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://gcore.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://gcore.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.9.1"></script><script src="/js/fancybox.js?version=1.9.1"></script><script src="/js/sidebar.js?version=1.9.1"></script><script src="/js/copy.js?version=1.9.1"></script><script src="/js/fireworks.js?version=1.9.1"></script><script src="/js/transition.js?version=1.9.1"></script><script src="/js/scroll.js?version=1.9.1"></script><script src="/js/head.js?version=1.9.1"></script><script src="/js/search/local-search.js"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>
