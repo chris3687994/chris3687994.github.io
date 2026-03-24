@@ -783,7 +783,7 @@ footer.is-mobile {
 .recent-post-item .article-title {
   display: block;
   margin-bottom: 0.3rem;
-  border-bottom: 1px solid #eee;
+  \border-bottom: 1px solid #eee;
   color: #2e2e2e;
   text-decoration: none;
   font-size: 1.4rem;
@@ -796,7 +796,7 @@ footer.is-mobile {
   transition: all 0.2s ease-in-out;
 }
 .recent-post-item .article-title:hover {
-  border-bottom: 1px solid #49b1f5;
+  \border-bottom: 1px solid #49b1f5;
   color: #49b1f5;
 }
 .tag-cloud {
@@ -1068,7 +1068,7 @@ footer.is-mobile {
 }
 #post-title.plain {
   margin-bottom: 0.3rem;
-  border-bottom: 1px solid #eee;
+  \border-bottom: 1px solid #eee;
   cursor: pointer;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -1077,7 +1077,7 @@ footer.is-mobile {
   transition: all 0.2s ease-in-out;
 }
 #post-title.plain:hover {
-  border-bottom: 1px solid #49b1f5;
+  \border-bottom: 1px solid #49b1f5;
   color: #49b1f5;
 }
 #post {
@@ -1571,11 +1571,11 @@ a.fancybox:focus {
     background-attachment: local;
   }
   #top-container #post-title {
-    color: #eee;
+    color: #4c4948;
     font-size: 1.1rem;
   }
   #post-title {
-    color: #eee;
+    color: #4c4948;
     font-size: 1.1rem;
   }
 }
