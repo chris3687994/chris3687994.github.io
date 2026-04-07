@@ -32,7 +32,7 @@ else if (diffDays >= 180) {
         '<div class="post-expire-info">' + '本文最后更新于' + diffDays + '天前(' + updateDate.format('YYYY-MM-DD') + ')，其中的信息可能已经有所发展，请谨慎参考。' + '</div>')
 }
 //console.log('脚本加载成功！发表时间: ' + postDate.format('YYYY-MM-DD') + '，最后更新时间: ' + updateDate.format('YYYY-MM-DD') + '，距离现在: ' + diffDays + '天');    </script><div class="article-container" id="post-content"><blockquote>
-<p>(2026-04-07)更新：因部分内容变化，本文更新了<a href="#%E6%B7%BB%E5%8A%A0%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%96%87%E4%BB%B6">添加工作流文件</a>中的内容，请跳转至相关章节进行查看。</p>
+<p>(2026-04-07)更新：因部分内容变化，本文更新了<a href="https://180hz.link/Migrate-And-Update-Hexo-Blog-From-Travis-Cl-to-Github-Actions/#%E6%B7%BB%E5%8A%A0%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%96%87%E4%BB%B6">添加工作流文件</a>中的内容，请跳转至相关章节进行查看。</p>
 </blockquote>
 <h2 id="前言">前言</h2>
 <p>  由于很久没有打理自己的博客了，最近在准备更新一波自己的博客的时候，发现原来自动部署的Travis Cl竟然开始收费。虽然官方说会有免费的方案，但是仔细查阅相关资料后发现，所谓的免费方案只是给你了一些积分，每次部署都会消耗一些积分，不会自动恢复，这就意味着积分用完后，就必须使用付费的方案了。我一看，好家伙！付费方案一个月69刀，这让贫穷的我接受不能，于是乎开始寻找替代方案。最后发现Github推出了类似的服务Github Actions，还是免费的，并且支持私有仓库，这让我眼前一亮，决定将博客的自动化部署迁移到Github Actions中来，并且考虑自动部署的虚拟机的环境兼容性问题，顺便将我的Hexo博客软件版本和主题版本进行升级，避免产生不必要的麻烦。<span id="more"></span></p>
