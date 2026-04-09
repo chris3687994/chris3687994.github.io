@@ -188,9 +188,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> 日常 </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -213,22 +213,22 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>大事记</title>
+      <link href="/events/index.html"/>
+      <url>/events/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>  相遇就是缘分，欢迎光临本博客！👏本博客搭建目前在GitPage上，博客框架为<a href="https://hexo.io">Hexo</a>，使用的主题为<a href="https://github.com/Molunerfinn/hexo-theme-melody">Melody</a>，自己稍微做了些修改，但不妨碍原版是一款非常好看的主题，强烈推荐给大家，同时也感谢作者@<a href="https://molunerfinn.com">Molunerfinn</a>的辛勤付出！评论系统用的是Giscus评论系统。<br>  设置本页面的目的是记录博客自诞生起一些比较重要时刻，因此取名大事记，按时间进行排序。</p><table><thead><tr><th style="text-align:center">时间</th><th style="text-align:center">事件</th></tr></thead><tbody><tr><td style="text-align:center">2019-04-05</td><td style="text-align:center">开通了博客，域名为flag.life，托管在GitPage上，使用Melody主题，使用Disqus评论系统</td></tr><tr><td style="text-align:center">2019-04-07</td><td style="text-align:center">使用Travis CL自动部署博客</td></tr><tr><td style="text-align:center">2020-10-02</td><td style="text-align:center">加入爱情树页面，见证自己的爱情❤️</td></tr><tr><td style="text-align:center">2022-12-17</td><td style="text-align:center">因Travis CL收费，使用Github Actions自动部署博客</td></tr><tr><td style="text-align:center">2025-12-01</td><td style="text-align:center">博客启用了Cloudflare加速功能</td></tr><tr><td style="text-align:center">2025-12-05</td><td style="text-align:center">因Disqus评论系统屏蔽，修改主题并添加了Giscus评论系统</td></tr><tr><td style="text-align:center">2026-03-08</td><td style="text-align:center">原来的flag.life域名到期，购买并启用180hz.link</td></tr><tr><td style="text-align:center">2026-03-24</td><td style="text-align:center">将网站字体改成了霞鹜文楷屏幕阅读版，并更改了字体大小</td></tr><tr><td style="text-align:center">2026-04-05</td><td style="text-align:center">使用了新版的不蒜子统计，并更新了图标⭐</td></tr><tr><td style="text-align:center">2026-04-07</td><td style="text-align:center">为博客文章添加上了文章过期提醒功能</td></tr><tr><td style="text-align:center">2026-04-09</td><td style="text-align:center">添加博客大事记页面</td></tr></tbody></table>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>大事记</title>
-      <link href="/events/index.html"/>
-      <url>/events/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[<p>  相遇就是缘分，欢迎光临本博客！👏本博客搭建目前在GitPage上，博客框架为<a href="https://hexo.io">Hexo</a>，使用的主题为<a href="https://github.com/Molunerfinn/hexo-theme-melody">Melody</a>，自己稍微做了些修改，但不妨碍原版是一款非常好看的主题，强烈推荐给大家，同时也感谢作者@<a href="https://molunerfinn.com">Molunerfinn</a>的辛勤付出！评论系统用的是Giscus评论系统。<br>  设置本页面的目的是记录博客自诞生起一些比较重要时刻，因此取名大事记，按时间进行排序。</p><table><thead><tr><th style="text-align:center">时间</th><th style="text-align:center">事件</th></tr></thead><tbody><tr><td style="text-align:center">2019-04-05</td><td style="text-align:center">开通了博客，域名为flag.life，托管在GitPage上，使用Melody主题，使用Disqus评论系统</td></tr><tr><td style="text-align:center">2019-04-07</td><td style="text-align:center">使用Travis CL自动部署博客</td></tr><tr><td style="text-align:center">2020-10-02</td><td style="text-align:center">加入爱情树页面，见证自己的爱情❤️</td></tr><tr><td style="text-align:center">2022-12-17</td><td style="text-align:center">因Travis CL收费，使用Github Actions自动部署博客</td></tr><tr><td style="text-align:center">2025-12-01</td><td style="text-align:center">博客启用了Cloudflare加速功能</td></tr><tr><td style="text-align:center">2025-12-05</td><td style="text-align:center">因Disqus评论系统屏蔽，修改主题并添加了Giscus评论系统</td></tr><tr><td style="text-align:center">2026-03-08</td><td style="text-align:center">原来的flag.life域名到期，购买并启用180hz.link</td></tr><tr><td style="text-align:center">2026-03-24</td><td style="text-align:center">将网站字体改成了霞鹜文楷屏幕阅读版，并更改了字体大小</td></tr><tr><td style="text-align:center">2026-04-05</td><td style="text-align:center">使用了新版的不蒜子统计，并更新了图标⭐</td></tr><tr><td style="text-align:center">2026-04-07</td><td style="text-align:center">为博客文章添加上了文章过期提醒功能</td></tr><tr><td style="text-align:center">2026-04-09</td><td style="text-align:center">添加博客大事记页面</td></tr></tbody></table>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
