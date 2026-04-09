@@ -1,0 +1,7 @@
+User-agent: Baiduspider
+Allow: /$
+Disallow: /
+
+User-agent: *
+Allow: /
+
