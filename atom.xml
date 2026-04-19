@@ -10,7 +10,32 @@
   <rights>All rights reserved 2026, 丹羽真</rights>
   <subtitle>以自己的意志行动并带动他人，这是最基础的，即使是人类也被允许使用的超能力。</subtitle>
   <title>丹羽真のBLOG</title>
-  <updated>2026-04-08T16:00:00.000Z</updated>
+  <updated>2026-04-18T16:00:00.000Z</updated>
+  <entry>
+    <author>
+      <name>丹羽真</name>
+    </author>
+    <category term="技术" scheme="https://180hz.link/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="网络字体" scheme="https://180hz.link/tags/%E7%BD%91%E7%BB%9C%E5%AD%97%E4%BD%93/"/>
+    <category term="霞鹜文楷" scheme="https://180hz.link/tags/%E9%9C%9E%E9%B9%9C%E6%96%87%E6%A5%B7/"/>
+    <category term="霞鹜文楷屏幕阅读版" scheme="https://180hz.link/tags/%E9%9C%9E%E9%B9%9C%E6%96%87%E6%A5%B7%E5%B1%8F%E5%B9%95%E9%98%85%E8%AF%BB%E7%89%88/"/>
+    <category term="LXGW WenKai" scheme="https://180hz.link/tags/LXGW-WenKai/"/>
+    <category term="LXGW WenKai Mono Screen" scheme="https://180hz.link/tags/LXGW-WenKai-Mono-Screen/"/>
+    <category term="汉字" scheme="https://180hz.link/tags/%E6%B1%89%E5%AD%97/"/>
+    <category term="中文网字计划" scheme="https://180hz.link/tags/%E4%B8%AD%E6%96%87%E7%BD%91%E5%AD%97%E8%AE%A1%E5%88%92/"/>
+    <content>
+      <![CDATA[<h2 id="前言">前言</h2><p>  中文作为世界上最古老的语言之一，是最优雅的表意文字，承载了中华文明悠久而又厚重的历史。作为一个生活在现代的中华儿女，曾经在观看《河西走廊》的纪录片时发现能够毫无障碍的阅读2000年前的汉代简牍，可见汉字的一脉相承。同时作为一个中文博客的博主，主题原来的字体在考虑适配性上使用的都是各个系统的默认字体，中规中矩但缺乏个性，看的时间长了，不免的产生了审美疲劳。之前也浏览过Google Fonts提供的中文字体，给人一种冷冰冰莫得感情的感觉，遂作罢。直到前些日子为了更新博客的<a href="https://www.busuanzi.cc/">不蒜子</a>脚本，进入了新版官网，在浏览网页的时候一下子就被网页使用的字体所深深吸引。打开浏览器的F12查看使用的字体，显示使用的是一款名称为“LXGW WenKai”的中文字体。将字体名称复制到搜索引擎中进行查找，搜索引擎将我引导至了一个新的网站，<a href="https://chinese-font.netlify.app/">中文网字计划</a>的官网。<span id="more"></span></p><h2 id="中文网字计划">中文网字计划</h2><p>  中文网字计划是提供一套开源的、全方位的、全场景的 Web 字体解决方案的网站。在网站的首页醒目的写着：“中文网字计划，带来网络中文的爱与和谐”的标语。在它的灵感页面，也有着一句大大的Slogan：“将想象注入你的网站，追寻中文字体的无限可能”。网站提供了80种不同风格的中文字体以供选择，此次使用的霞鹜文楷也包含在其中。网站还提供了字体相关工具、免费的字图公益CDN和字体分析功能供开发者使用，开发者可以上传自己的字体进行详尽的分析。点进字体详情，不但能实时的预览你心仪的字体，该提供了字体分析和中文完整度分析。对我而言，这个网站极大的方便了我，让我省去了寻找和对比字体的时间成本，强烈推荐给各位。</p><h2 id="霞鹜文楷字体简介">霞鹜文楷字体简介</h2><p>  <a href="https://github.com/lxgw/LxgwWenKai">霞鹜文楷</a>是 一款开源中文字体，基于 FONTWORKS 出品字体 Klee One 衍生。而<a href="https://github.com/lxgw/LxgwWenKai-Screen">霞鹜文楷屏幕阅读版</a>，则是本字体是霞鹜文楷的屏幕舒适阅读版本，更适合 PC 及 Android 手机屏幕显示。此外，该字体还提供等宽版本，也就是本博客使用的Mono版本。霞鹜文楷经过长时间的更新，对20902个基本汉字、90个基本汉字补充、36个汉字笔画、12个汉字结构、43个汉语注音、27个注音扩展、214个康熙部首及6592个汉字扩展A（即：古籍、方言、人名、地名及类推简化字等场景中的生僻字）都实现了100%的覆盖，其他扩展均实现了不同程度的覆盖，是一款完成度很高的字体。而我们日常使用的汉字也就3000多个，这款字体实现了全覆盖，颇有种它走过的路比我吃过的盐都多的感觉。<br><img src="https://files.seeusercontent.com/2026/04/19/T1tg/4d61259.png" alt="霞鹜文楷屏幕阅读版字体详情和中文完整度分析"></p><h2 id="添加霞鹜文楷屏幕阅读版">添加霞鹜文楷屏幕阅读版</h2><p>  添加的步骤很简单，<a href="https://chinese-font.netlify.app/zh-cn/fonts/lywkpmydb/LXGWWenKaiMonoScreen">教程</a>在这里，页面上有详细介绍，下面我将字体通过CDN嵌入我的博客过程的以及相关的注意事项进行简单说明：</p><ol><li><p>将字体的CDN链接引入到Melody主题模板文件中。打开主题中的 <code>.\layout\includes\head.pug</code>文件，在文件中的众多引用中新起一行，加入加入下列代码后保存并关闭。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">link(rel=&#x27;stylesheet&#x27; href=&#x27;https://gcore.jsdelivr.net/npm/@chinese-fonts/lywkpmydb@2.0.0/dist/LXGWWenKaiMonoScreen/result.min.css&#x27;)</span><br></pre></td></tr></table></figure><blockquote><p>注意：这里不建议你使用官方使用的<code>chinese-fonts-cdn.deno.dev</code>的CDN，因为官方文章里说到免费静态部署有并发限制，导致加载字体时容易导致卡屏。因此建议使用jsdelivr作为CDN的源，并且默认你使用的是你自己有独立仓库的Melody主题或其他使用Pug语言的主题。</p></blockquote></li><li><p>在Melody主题的css文件中加入字体样式。打开主题的<code>.\source\css\var.styl</code>文件，在文件中找到<code>$font-family</code>变量，在变量的最前面添加上<code>&quot;LXGW WenKai Mono Screen&quot;</code>，注意这里建议添加上引号，然后保存关闭。</p></li></ol><p>  完成后在重新部署博客，即可查看效果，至此大功告成🎉，让汉字的字形之美展现给互联网的每一个人。</p>]]>
+    </content>
+    <id>https://180hz.link/Use-LXGW-WenKai-Fonts/</id>
+    <link href="https://180hz.link/Use-LXGW-WenKai-Fonts/"/>
+    <published>2026-04-18T16:00:00.000Z</published>
+    <summary>
+      <![CDATA[<h2 id="前言">前言</h2>
+<p>  中文作为世界上最古老的语言之一，是最优雅的表意文字，承载了中华文明悠久而又厚重的历史。作为一个生活在现代的中华儿女，曾经在观看《河西走廊》的纪录片时发现能够毫无障碍的阅读2000年前的汉代简牍，可见汉字的一脉相承。同时作为一个中文博客的博主，主题原来的字体在考虑适配性上使用的都是各个系统的默认字体，中规中矩但缺乏个性，看的时间长了，不免的产生了审美疲劳。之前也浏览过Google Fonts提供的中文字体，给人一种冷冰冰莫得感情的感觉，遂作罢。直到前些日子为了更新博客的<a href="https://www.busuanzi.cc/">不蒜子</a>脚本，进入了新版官网，在浏览网页的时候一下子就被网页使用的字体所深深吸引。打开浏览器的F12查看使用的字体，显示使用的是一款名称为“LXGW WenKai”的中文字体。将字体名称复制到搜索引擎中进行查找，搜索引擎将我引导至了一个新的网站，<a href="https://chinese-font.netlify.app/">中文网字计划</a>的官网。]]>
+    </summary>
+    <title>霞鹜文楷——展现中文的字形之美</title>
+    <updated>2026-04-18T16:00:00.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>丹羽真</name>
@@ -152,7 +177,7 @@
     <category term="Hexo" scheme="https://180hz.link/tags/Hexo/"/>
     <category term="日常" scheme="https://180hz.link/tags/%E6%97%A5%E5%B8%B8/"/>
     <content>
-      <![CDATA[<p>  其实很早就有了建立自己博客的想法，但是拖延症导致了我一直没有去付诸行动，这一拖就是一年，这次终于下定决心创建自己的博客。经过几天的折腾，才将这个这个博客搭建出来，由于水平有限，博客还有很多不足，希望偶尔进入这个博客的你能够多多包涵。<span id="more"></span></p><p>  我将在这个博客发表一些日常和技术方面的新的体会，欢迎提出建议和批评指正。同时欢迎交换友链 😊</p><p>  最后，国际惯例，Hello World！</p>]]>
+      <![CDATA[<p>  其实很早就有了建立自己博客的想法，但是拖延症导致了我一直没有去付诸行动，这一拖就是一年，这次终于下定决心创建自己的博客。经过几天的折腾，才将这个这个博客搭建出来，由于水平有限，博客还有很多不足，希望偶尔进入这个博客的你能够多多包涵。<span id="more"></span></p><p>  我将在这个博客发表一些日常和技术方面的心得体会，欢迎提出建议和批评指正。同时欢迎交换友链 😊</p><p>  最后，国际惯例，Hello World！</p>]]>
     </content>
     <id>https://180hz.link/Hello-World/</id>
     <link href="https://180hz.link/Hello-World/"/>
