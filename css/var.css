@@ -1,0 +1,58 @@
+html[data-theme="dark"] *::-webkit-scrollbar-thumb {
+  background-color: #6a737d;
+}
+html[data-theme="dark"] body {
+  background-color: #252c34;
+  color: #e3e2e0;
+}
+html[data-theme="dark"] nav#nav {
+  background-color: #0d1117;
+  color: #e3e2e0;
+}
+html[data-theme="dark"] .wave-wrap .wave .parallax > use:nth-child(1) {
+  fill: #252c34;
+}
+html[data-theme="dark"] .wave-wrap .wave .parallax > use:nth-child(2) {
+  fill: #252c34;
+}
+html[data-theme="dark"] .wave-wrap .wave .parallax > use:nth-child(3) {
+  fill: #252c34;
+}
+html[data-theme="dark"] .article-container code {
+  color: #e3e2e0;
+}
+html[data-theme="dark"] #sidebar {
+  background-color: #0d1117;
+  color: #e3e2e0;
+  box-shadow: 0rem 0 0.25rem rgba(250,250,250,0.5);
+}
+html[data-theme="dark"] #toggle-sidebar.fa.fa-arrow-right:before {
+  color: #e3e2e0;
+}
+html[data-theme="dark"] #page-header {
+  background-color: #252c34;
+  color: #e3e2e0;
+}
+html[data-theme="dark"] #page-header.fixed a,
+html[data-theme="dark"] #page-header.fixed .toggle-menu,
+html[data-theme="dark"] #page-header.fixed #site-name {
+  color: #e3e2e0;
+}
+html[data-theme="dark"] #content-inner h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5,
+html[data-theme="dark"] h6 {
+  color: #e3e2e0;
+}
+html[data-theme="dark"] #top-container {
+  background-color: #252c34;
+}
+html[data-theme="dark"] footer {
+  background-color: #0d1117;
+  color: #e3e2e0;
+}
+html[data-theme="dark"] .recent-post-item .article-title {
+  color: #e3e2e0;
+}
