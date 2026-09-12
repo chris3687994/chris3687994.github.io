@@ -49,6 +49,15 @@ html[data-theme="dark"] h5,
 html[data-theme="dark"] h6 {
   color: #e3e2e0;
 }
+html[data-theme="dark"] .search-dialog {
+  background-color: #252c34;
+}
+html[data-theme="dark"] #local-search .local-search__hit-item a {
+  color: #e3e2e0;
+}
+html[data-theme="dark"] #local-search .local-search__hit-item a:hover {
+  color: #49b1f5;
+}
 html[data-theme="dark"] #top-container {
   background-color: #252c34;
 }
@@ -2193,6 +2202,9 @@ a.fancybox:focus {
     margin-left: -45%;
     width: 90%;
   }
+}
+html[data-theme="dark"] .search-dialog {
+  background: #252c34;
 }
 #local-search .local-search-box {
   margin: 0 auto;
